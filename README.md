@@ -2,14 +2,8 @@
 vanilla js로 구현한 슬라이드바  
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slideBanner</title>
-</head>
-<style>
+//css
+
     #slide {
         position: relative;
         overflow: hidden;
@@ -115,8 +109,12 @@ vanilla js로 구현한 슬라이드바
     #slide .bar>li:first-child {
         margin-left: 0
     }
-</style>
-<body>
+
+
+
+//html
+
+
     <div id="slide">
         <ul class="slide-list">
             <li>1</li>
@@ -133,8 +131,9 @@ vanilla js로 구현한 슬라이드바
           <button type="button" class="play">play</button>
       </div>
     </div>
-</body>
-<script>
+
+
+//js
     window.addEventListener('load', function() {
 
      let MOVEING_PX = 6,
@@ -228,8 +227,6 @@ vanilla js로 구현한 슬라이드바
       };
 
 
-
-
       function barClick(event) {
         bar.children[event].addEventListener('click',function(){
           if(!moveIng) {
@@ -289,5 +286,4 @@ vanilla js로 구현한 슬라이드바
       };
 
     });
-</script>
-</html>
+
