@@ -2,7 +2,7 @@
 vanilla js로 구현한 슬라이드바  
 
 
-//css
+css
 
     #slide {
         position: relative;
@@ -112,7 +112,7 @@ vanilla js로 구현한 슬라이드바
 
 
 
-//html
+html
 
 
     <div id="slide">
@@ -133,7 +133,9 @@ vanilla js로 구현한 슬라이드바
     </div>
 
 
-//js
+javascript
+
+
     window.addEventListener('load', function() {
 
      let MOVEING_PX = 6,
